@@ -52,11 +52,15 @@ export const Role = styled.p`
   font-size: 4rem;
   text-align: center;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 2px white;
+  -webkit-text-stroke: 1px white;
   -webkit-font-smoothing: antialiased;
 
   @media (max-width: 600px){
-    font-size: 3rem;
+    font-size: 2rem;
+  }
+
+  .typewriter-cursor{
+    -webkit-text-fill-color: #3E02F2;
   }
 `
 
