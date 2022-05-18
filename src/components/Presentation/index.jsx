@@ -15,16 +15,18 @@ export default function Presentation(){
           options={{
             loop: true,
             autoStart: true,
+            cursorClassName: "typewriter-cursor",
+            delay: 100
           }}
 
           onInit={ typewriter => {
             typewriter.typeString("frontend developer")
             .pauseFor(1500)
             .deleteAll()
-            .typeString("coffee addicted")
+            .typeString("technology enthusiast")
             .pauseFor(1500)
             .deleteAll()
-            .typeString("technology enthusiast")
+            .typeString("coffee addicted")
             .pauseFor(1500)
             .deleteAll()
             .typeString("tech lover")

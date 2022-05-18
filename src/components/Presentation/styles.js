@@ -10,19 +10,23 @@ export const Wrapper = styled.div`
   height: 100vh;
 
   @keyframes downArrowAnimation {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
+    0%{
+      opacity: 1;
+      transform: translateY(-15px);
+    }
+
+    50%{
+      opacity: 1;
+    }
+
+    100%{
+      opacity: 0;
+      transform: translateY(15px);
+    }
 }
 
   .down-arrow{
-    margin: 5rem auto 0;
+    margin: 7rem auto 0;
     font-size: 2.2rem;
     animation: 2s ease-in infinite downArrowAnimation;
 }
@@ -60,7 +64,10 @@ export const Role = styled.p`
   }
 
   .typewriter-cursor{
-    -webkit-text-fill-color: #3E02F2;
+    -webkit-text-fill-color: #EFEDFD;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px white;
+    -webkit-font-smoothing: antialiased;
   }
 `
 
