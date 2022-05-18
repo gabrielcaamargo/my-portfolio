@@ -5,9 +5,6 @@ export const Container = styled.div`
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  margin-bottom: 600px;
-
-
 
   h1{
     font-size: 54px;

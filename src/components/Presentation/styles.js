@@ -41,12 +41,23 @@ export const Name = styled.h1`
   text-transform: uppercase;
   margin-bottom: 2rem;
   height: 23%;
+  overflow-y: hidden;
 
   @media (max-width: 600px){
-    font-size: 4.2rem;
+    font-size: 3.7rem;
     margin-bottom: 1rem;
     line-height: 48px;
     height: 16%;
+  }
+
+  @media (max-width: 768px){
+    font-size: 3.9rem;
+    height: 20%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+
   }
 `;
 
