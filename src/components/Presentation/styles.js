@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   display: flex;
@@ -30,7 +30,7 @@ export const Wrapper = styled.div`
     font-size: 2.2rem;
     animation: 2s ease-in infinite downArrowAnimation;
 }
-`
+`;
 
 export const Name = styled.h1`
   font-family: 'Commissioner', sans-serif;
@@ -40,16 +40,15 @@ export const Name = styled.h1`
   line-height: 70px;
   text-transform: uppercase;
   margin-bottom: 2rem;
-  span{
-    color: #3E02F2;
-  }
+  height: 23%;
 
   @media (max-width: 600px){
-    font-size: 4rem;
+    font-size: 4.2rem;
     margin-bottom: 1rem;
-    line-height: 43px;
+    line-height: 48px;
+    height: 16%;
   }
-`
+`;
 
 export const Role = styled.p`
   font-weight: 500;
@@ -69,5 +68,4 @@ export const Role = styled.p`
     -webkit-text-stroke: 1px white;
     -webkit-font-smoothing: antialiased;
   }
-`
-
+`;

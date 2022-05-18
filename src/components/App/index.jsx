@@ -1,11 +1,18 @@
-import React from 'react'
+import React from 'react';
 
-import Presentation from '../Presentation'
+import { ThemeProvider } from 'styled-components';
+import { GlobalStyle } from '../themes/global';
+import defaultTheme from '../themes/default';
 
-export default function App(){
-  return(
-    <>
+import Presentation from '../Presentation';
+import AboutMe from '../AboutMe';
+
+export default function App() {
+  return (
+    <ThemeProvider theme={defaultTheme}>
+      <GlobalStyle />
       <Presentation />
-    </>
-  )
+      <AboutMe />
+    </ThemeProvider>
+  );
 }
